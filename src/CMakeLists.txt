@@ -536,8 +536,8 @@ endif()
 # Update gitinfo.h
 
 add_custom_target( revision_check ALL
-	COMMAND updaterevision src/gitinfo.h
-	WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+	COMMAND updaterevision gitinfo.h
+	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 	DEPENDS updaterevision )
 
 # Libraries ZDoom needs
