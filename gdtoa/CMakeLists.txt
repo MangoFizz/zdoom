@@ -15,6 +15,8 @@ endif()
 include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
 add_definitions( -DINFNAN_CHECK -DMULTIPLE_THREADS )
 
+set( GDTOA_INCLUDE_DIRECTORIES ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR} PARENT_SCOPE )
+
 if( NOT MSVC AND NOT APPLE )
 	if( NOT CMAKE_CROSSCOMPILING )
 		add_executable( arithchk arithchk.c )

@@ -1128,9 +1128,8 @@ include_directories( .
 	xlat
 	scripting
 	scripting/vm
-	../gdtoa
 	../dumb/include
-	${CMAKE_BINARY_DIR}/gdtoa
+	${GDTOA_INCLUDE_DIRECTORIES}
 	${SYSTEM_SOURCES_DIR} )
 
 add_dependencies( zdoom revision_check )
